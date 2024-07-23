@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>NAFDAC e-License</title>
+    <meta name="twitter:description" content="Check validity of e-Licenses issued by NAFDAC.">
+    <meta name="twitter:image" content="https://nfctadms.org/assets/img/favicon.png">
+    <meta property="og:image" content="https://nfctadms.org/assets/img/favicon.png">
+    <meta name="description" content="Check validity of e-Licenses issued by NAFDAC.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="NAFDAC e-License">
+    <link rel="icon" type="image/png" sizes="500x500" href="../assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="500x500" href="../assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="500x500" href="../assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="500x500" href="../assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="500x500" href="../assets/img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400i,600,600i,700,900">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.6/b-colvis-1.5.6/b-html5-1.5.6/b-print-1.5.6/cr-1.5.0/r-2.2.2/sc-2.0.0/sl-1.3.0/datatables.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body class="bg-coat">
+    <nav class="navbar navbar-light navbar-expand-md shadow-sm bg-white pt-3 pb-3">
+        <div class="container-fluid"><a class="navbar-brand" id="logo2" href="#"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"><i class="la la-ellipsis-h"></i></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <form class="form-inline mx-auto mobile-hidden mobile-hidden-768px">
+                    <div class="form-group">
+                        <div class="input-group"><input class="form-control input-box search" type="search" placeholder="Search...">
+                            <div class="input-group-append"><button class="btn search-btn" type="button"><i class="la la-search"></i></button></div>
+                        </div>
+                    </div>
+                </form>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item navlink1 mr-3"><a class="nav-link navlink1 desktop-hidden" href="index.html">Dashboard</a></li>
+                    <li class="nav-item navlink1 mr-3"><a class="nav-link navlink1 desktop-hidden" href="manage-companies.html">Manage Companies</a></li>
+                    <li class="nav-item navlink1 mr-3"><a class="nav-link navlink1 desktop-hidden" href="payments.html">Payments</a></li>
+                    <li class="nav-item navlink1 mr-3"><a class="nav-link navlink1 desktop-hidden" href="user-management.html">User Management</a></li>
+                    <li class="nav-item navlink1 mr-3"><a class="nav-link navlink1 desktop-hidden" href="messages.html">Messages</a></li>
+                    <li class="nav-item navlink1 mr-3"><a class="nav-link navlink1 desktop-hidden" href="faqs.html">FaQs</a></li>
+                    <li class="nav-item navlink1 mr-3"><a class="nav-link navlink1 desktop-hidden" href="logs.html">Logs</a></li>
+                    <li class="nav-item navlink1 mr-3"><a class="nav-link navlink1 desktop-hidden" href="#">Profile</a></li>
+                    <li class="nav-item navlink1 mr-3"><a class="nav-link navlink1 desktop-hidden" href="settings.html">Settings</a></li>
+                    <li class="nav-item navlink1 mr-3"><a class="nav-link navlink1 desktop-hidden" href="../index.html">Log Out</a></li>
+                    <li class="nav-item navlink1 mr-3"><a class="nav-link navlink1 mobile-hidden" href="mailto:admin@nafdac.gov.ng">Need help?</a></li>
+                    <li class="nav-item dropdown dropdown1 mr-3"><a class="dropdown-toggle nav-link no-caret navlink1 mobile-hidden" aria-expanded="false" data-toggle="dropdown" href="#"><img class="rounded-circle mr-2" src="../assets/img/0000596.jpg" width="23">Hi, Jeremiah</a>
+                        <div class="dropdown-menu"><a class="dropdown-item dropdown1-item dropdown1" href="#">Profile</a><a class="dropdown-item dropdown1-item dropdown1" href="#">Log Out&nbsp;</a></div>
+                    </li>
+                    <li class="nav-item navlink1"><a class="nav-link navlink1 mobile-hidden" href="https://nafdac.gov.ng">Visit NAFDAC</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><!-- Start: Register Company Modal -->
+    <form>
+        <div class="modal fade" role="dialog" tabindex="-1" id="registerCompany">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content modal1">
+                    <div class="modal-header">
+                        <h4 class="modal-title modal-h">Register Company</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-section">
+                            <p class="mb-0 form-section-p">Company Information</p>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="form-group"><label class="field-label" for="companyName">Company Name<span class="star">*</span></label><input class="form-control input-box" type="text" id="companyName"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"><label class="field-label" for="CAC_Number">CAC Number<span class="star">*</span></label><input class="form-control input-box" type="text" id="CAC_Number"></div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group"><label class="field-label" for="companyAddress">Company Address<span class="star">*</span></label><textarea class="form-control input-box" id="companyAddress"></textarea></div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group"><label class="field-label" for="LGA">LGA<span class="star">*</span></label><select class="form-control input-box select" id="LGA">
+                                        <optgroup label="LGA where company is located">
+                                            <option value="12" selected="">- Select -</option>
+                                            <option value="13">AMAC</option>
+                                            <option value="14">Karu</option>
+                                        </optgroup>
+                                    </select></div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group"><label class="field-label" for="state">State<span class="star">*</span></label><select class="form-control input-box select" id="state">
+                                        <optgroup label="State where company is located">
+                                            <option value="12">- Select -</option>
+                                            <option value="13" selected="">FCT</option>
+                                        </optgroup>
+                                    </select></div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group"><label class="field-label" for="longitude">Longitude<span class="star">*</span></label><input class="form-control input-box" type="text" id="longitude"></div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group"><label class="field-label" for="latitude">Latitude<span class="star">*</span></label><input class="form-control input-box" type="text" id="latitude"></div>
+                            </div>
+                        </div>
+                        <div class="form-section">
+                            <p class="mb-0 form-section-p">License &amp; Product Information</p>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                <div class="form-group"><label class="field-label" for="productNumber">Number of Products<span class="star">*</span></label><input class="form-control input-box" type="number" id="productNumber"></div>
+                            </div>
+                        </div>
+                        <div class="form-section">
+                            <p class="mb-0 form-section-p">Inspection Information</p>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-3">
+                                <div class="form-group"><label class="field-label" for="lastInspectionDate">Last Inspection Date<span class="star">*</span></label><input class="form-control input-box" id="lastInspectionDate" type="date"></div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group"><label class="field-label" for="inspectionType">Inspection Type<span class="star">*</span></label><select class="form-control input-box select" id="inspectionType">
+                                        <optgroup label="Type of inspection carried out">
+                                            <option value="12" selected="">- Select -</option>
+                                            <option value="13">Regular</option>
+                                            <option value="14">Advanced</option>
+                                        </optgroup>
+                                    </select></div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group"><label class="field-label" for="inspectioFindings">Inspection Findings<span class="star">*</span></label><select class="form-control input-box select" id="inspectioFindings">
+                                        <optgroup label="What were the findings">
+                                            <option value="12" selected="">- Select -</option>
+                                            <option value="13">Satisfactory</option>
+                                            <option value="14">Unsatisfactory</option>
+                                        </optgroup>
+                                    </select></div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group"><label class="field-label" for="sanctionsApplied">Sanctions Applied<span class="star">*</span></label><select class="form-control input-box select" id="sanctionsApplied">
+                                        <optgroup label="Sactions appied">
+                                            <option value="12" selected="">- Select -</option>
+                                            <option value="14">None</option>
+                                            <option value="13">Compliance Directives</option>
+                                            <option value="14">Warning Letters</option>
+                                            <option value="14">Administrative Charge</option>
+                                            <option value="14">Placement of Hold</option>
+                                            <option value="14">Forfeiture of Products</option>
+                                        </optgroup>
+                                    </select></div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group"><label class="field-label" for="remarks">Remarks<span class="star">*</span></label><textarea class="form-control input-box" id="remarks"></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn1" type="button">Submit</button></div>
+                </div>
+            </div>
+        </div>
+    </form><!-- End: Register Company Modal -->
+    <div class="container-fluid min-vh-100">
+        <div class="row mt-4">
+            <div class="col-md-2"><a class="btn btn-block btn1 mb-3" role="button" href="#registerCompany" data-toggle="modal" data-target="#registerCompany">Register Company</a>
+                <div class="card shadow-sm card1 pt-3 pb-3 mobile-hidden mb-4">
+                    <div class="card-body p-0">
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link active sidebar-nav active" href="index.html"><i class="la la-desktop mr-3"></i>Dashboard</a></li>
+                            <li class="nav-item"><a class="nav-link sidebar-nav" href="manage-companies.html"><i class="la la-bank mr-3"></i>Manage Companies</a></li>
+                            <li class="nav-item"><a class="nav-link sidebar-nav" href="payments.html"><i class="la la-credit-card mr-3"></i>Payments</a></li>
+                            <li class="nav-item"><a class="nav-link sidebar-nav" href="user-management.html"><i class="la la-users mr-3"></i>User Management</a></li>
+                            <li class="nav-item"><a class="nav-link sidebar-nav" href="messages.html"><i class="la la-wechat mr-3"></i>Messages</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card shadow-sm card1 pt-3 pb-3 mobile-hidden mb-4">
+                    <div class="card-body p-0">
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link sidebar-nav" href="faqs.html"><i class="la la-bookmark mr-3"></i>FaQs</a></li>
+                            <li class="nav-item"><a class="nav-link sidebar-nav" href="logs.html"><i class="la la-calendar-check-o mr-3"></i>Logs</a></li>
+                            <li class="nav-item"><a class="nav-link sidebar-nav" href="settings.html"><i class="la la-gear mr-3"></i>Settings</a></li>
+                            <li class="nav-item"><a class="nav-link sidebar-nav" href="#"><i class="la la-sign-out mr-3"></i>Log Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <!-- Start: Button Group --><div role="group" class="btn-group pull-right"><button class="btn btn2" onclick="enableform()"><i class="la la-edit mr-2"></i>Edit Record</button><button class="btn btn3" type="button"><i class="la la-close mr-2"></i>Block User</button></div><!-- End: Button Group -->
+                    <h1 class="dashboard-h mb-0">Clark Kent</h1>
+                    <ol class="breadcrumb breadcrumb p-0">
+                        <li class="breadcrumb-item"><a href="index.html"><span>Dashboard</span></a></li>
+                        <li class="breadcrumb-item"><a href="user-management.html"><span>User Management</span></a></li>
+                        <li class="breadcrumb-item"><a href="view-user.html"><span>Staff ID: 123423</span></a></li>
+                    </ol>
+                </div>
+                <div class="row p-0">
+                    <div class="col-md-12 mb-3 p-0">
+                        <div class="card shadow-sm card1">
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group"><label class="field-label" for="fullname">Full Name<span class="star">*</span></label><input class="form-control input-box" type="text" id="fullname" autocomplete="on" disabled=""></div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group"><label class="field-label" for="subject">E-Mail<span class="star">*</span></label><input class="form-control input-box" type="email" id="email" autocomplete="on" disabled=""></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label class="field-label" for="phoneNumber">Phone Number<span class="star">*</span></label><input class="form-control" type="tel" id="phoneNumber" autocomplete="on" disabled=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-6">
+                                            <div class="form-group"><label class="field-label" for="dept">Department<span class="star">*</span></label><select class="form-control input-box select" id="dept" autofocus="" disabled="">
+                                                    <optgroup label="Acccout Type">
+                                                        <option value="12" selected="">- Select -</option>
+                                                        <option value="13">ICT</option>
+                                                        <option value="14">Admin</option>
+                                                    </optgroup>
+                                                </select></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group"><label class="field-label" for="accountType">Account Type<span class="star">*</span></label><select class="form-control input-box select" id="accountType" autofocus="" disabled="">
+                                                    <optgroup label="Acccout Type">
+                                                        <option value="12" selected="">- Select -</option>
+                                                        <option value="13">Staff</option>
+                                                        <option value="14">Administrator</option>
+                                                    </optgroup>
+                                                </select></div>
+                                        </div>
+                                    </div><a class="pull-right delete-link" href="#">Delete Account</a>
+                                    <div class="form-group"><button class="btn btn1" type="button">Update Record</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row bg-white">
+        <div class="col">
+            <p class="footer-p mt-2 mb-1">© 2019 NAFDAC e-License. All rights reserved.</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.6/b-colvis-1.5.6/b-html5-1.5.6/b-print-1.5.6/cr-1.5.0/r-2.2.2/sc-2.0.0/sl-1.3.0/datatables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/date.js"></script>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>
